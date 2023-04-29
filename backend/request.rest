@@ -1,0 +1,15 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviçosd",
+    "description": "asd",
+    "price": 1500,
+    "image": "https://www.mktesportivo.com/wp-content/uploads/2022/09/ec-bahia-city-football-group-1170x658-1-590x332-1.jpg"
+}
+
+###
+GET http://localhost:3000/api/services/
+
+###
+GET http://localhost:3000/api/services/6
