@@ -68,3 +68,7 @@ GET http://localhost:3000/api/parties
 ###
 
 GET http://localhost:3000/api/parties/644ea94ee77bc7bcde4c6664
+
+###
+
+DELETE http://localhost:3000/api/parties/644ea94ee77bc7bcde4c6661

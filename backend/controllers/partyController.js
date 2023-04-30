@@ -64,6 +64,7 @@ const partyController = {
 
             if(!party) {
                 res.status(404).json({msg: "Festa não encontrada."});
+                return;
             }
             res.json(party);
             
@@ -71,6 +72,18 @@ const partyController = {
             console.log(error)
             
         }
+    },
+    delete: async(req, res) => {
+        const id = req.params.id
+        const party = await PartyModel.findById(id);
+
+        if(!party) {
+            res.status(404).json({msg: "Festa não encontrada."});
+            return;
+        }
+        const deletedParty = await PartyModel.findByIdAndDelete(id);
+
+        res.status(200).json({ deletedParty, msg: "Fexta excluida com sucesso"});
     },
 };
 
