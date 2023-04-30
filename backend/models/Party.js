@@ -5,6 +5,12 @@ const {Schema} = mongoose
 const {serviceSchema} = require('./Service')
 
 const partySchema = new Schema({
+
+    title: {
+        type: String,
+        required: true,
+    },
+    
     author: {
         type: String,
         required: true,
