@@ -72,3 +72,31 @@ GET http://localhost:3000/api/parties/644ea94ee77bc7bcde4c6664
 ###
 
 DELETE http://localhost:3000/api/parties/644ea94ee77bc7bcde4c6661
+
+
+###
+
+PUT http://localhost:3000/api/parties/644eaa4fde197d3ca286e109
+Content-Type: application/json
+
+{
+    "title": "Meu Evento3",
+    "author": "Rodrigo",
+    "description": "uma festa de aniversario",
+    "budget": 12000,
+    "image": "https://www.mktesportivo.com/wp-content/uploads/2022/09/ec-bahia-city-football-group-1170x658-1-590x332-1.jpg",
+    "services": [
+        {
+            "name": "Teste 1",
+            "description": "as",
+            "price": 7500,
+            "image": "https://www.mktesportivo.com/wp-content/uploads/2022/09/ec-bahia-city-football-group-1170x658-1-590x332-1.jpg"
+        },
+        {
+            "name": "Teste 2",
+            "description": "as",
+            "price": 2500,
+            "image": "https://www.mktesportivo.com/wp-content/uploads/2022/09/ec-bahia-city-football-group-1170x658-1-590x332-1.jpg"
+        }
+    ]
+}
